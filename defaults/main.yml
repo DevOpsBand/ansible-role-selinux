@@ -1,0 +1,20 @@
+---
+# defaults file for selinux
+
+# SELinux mode (enforcing / permissive / disabled)
+selinux_state: disabled
+
+# SELinux policy (targeted / mls)
+selinux_policy: targeted
+
+# Reboot server if SELinux configuration has been changed
+selinux_reboot: false
+
+# Message for shutdown
+selinux_reboot_message: SELinux configuration updates triggered
+
+# Delay before polling the host
+selinux_reboot_wait_delay: 10
+
+# Pause after reboot
+selinux_reboot_pause_: 10

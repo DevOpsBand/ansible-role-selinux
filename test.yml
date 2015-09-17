@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    - { role: ansible-role-selinux, selinux_reboot: true }
+    - { role: ansible-role-selinux, selinux_reboot: true, selinux_state: enforcing }
+    - { role: ansible-role-selinux, selinux_reboot: true }
